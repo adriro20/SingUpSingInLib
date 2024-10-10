@@ -15,5 +15,9 @@ public enum Request implements Serializable{
     SING_UP,  // Registro de cuenta
     SING_IN,  // Inicio de sesión
     SING_OUT, // Cierre de sesión
-    CLOSE     // Apagar servidor
+    CLOSE,     // Apagar servidor
+    INTERNAL,
+    LOG_IN,
+    CONNECTIONS,
+    USER_EXISTS
 }

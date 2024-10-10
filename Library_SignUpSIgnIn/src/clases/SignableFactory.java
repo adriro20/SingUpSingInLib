@@ -12,7 +12,8 @@ package clases;
 public class SignableFactory {
     
     public static Signable getSignable(){
-        return new Client();
+        //return new Client();
+        return null;
     }
     
 }

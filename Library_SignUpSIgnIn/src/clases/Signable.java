@@ -16,10 +16,10 @@ import excepciones.UserExitsException;
  */
 public interface Signable {
     
-    public void signIn(Message mensaje) throws InternalServerErrorException, LogInDataException, NoConnectionsAvailableException;
+    public boolean signIn(Message mensaje) throws InternalServerErrorException, LogInDataException, NoConnectionsAvailableException;
     
-    public void signUp(Message mensaje) throws InternalServerErrorException, UserExitsException, NoConnectionsAvailableException;
+    public boolean signUp(Message mensaje) throws InternalServerErrorException, UserExitsException, NoConnectionsAvailableException;
     
-    public void logOut(Message mensaje) throws InternalServerErrorException;
+    public boolean logOut(Message mensaje) throws InternalServerErrorException;
     
 }

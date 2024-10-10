@@ -14,9 +14,9 @@ import java.io.Serializable;
 public class User implements Serializable{
 private String nombre;
 private Integer telefono;
-private String Correo;
-private String Ciudad;
-private String Contraseña;
+private String correo;
+private String ciudad;
+private String pass;
 
     /**
      * Constructor vacio
@@ -41,28 +41,29 @@ private String Contraseña;
     }
 
     public String getCorreo() {
-        return Correo;
+        return correo;
     }
 
-    public void setCorreo(String Correo) {
-        this.Correo = Correo;
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 
     public String getCiudad() {
-        return Ciudad;
+        return ciudad;
     }
 
-    public void setCiudad(String Ciudad) {
-        this.Ciudad = Ciudad;
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
     }
 
-    public String getContraseña() {
-        return Contraseña;
+    public String getPass() {
+        return pass;
     }
 
-    public void setContraseña(String Contraseña) {
-        this.Contraseña = Contraseña;
+    public void setPass(String pass) {
+        this.pass = pass;
     }
+    
        
       
       

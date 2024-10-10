@@ -5,11 +5,13 @@
  */
 package clases;
 
+import java.io.Serializable;
+
 /**
  *
  * @author 2dam
  */
-public class Message {
+public class Message implements Serializable{
     private User user;
     private Request request;
     

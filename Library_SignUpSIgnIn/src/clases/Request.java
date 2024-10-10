@@ -5,11 +5,13 @@
  */
 package clases;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Adrian Rocha
  */
-public enum Request {
+public enum Request implements Serializable{
     SING_UP,  // Registro de cuenta
     SING_IN,  // Inicio de sesión
     SING_OUT, // Cierre de sesión

@@ -12,12 +12,12 @@ import java.io.Serializable;
  * @author Adrian Rocha
  */
 public enum Request implements Serializable{
-    SING_UP,  // Registro de cuenta
-    SING_IN,  // Inicio de sesión
-    SING_OUT, // Cierre de sesión
+    SING_UP_REQUEST,  // Registro de cuenta
+    SING_IN_REQUEST,  // Inicio de sesión
+    SING_OUT_REQUEST, // Cierre de sesión
     CLOSE,     // Apagar servidor
-    INTERNAL,
-    LOG_IN,
-    CONNECTIONS,
-    USER_EXISTS
+    INTERNAL_EXCEPTION,
+    LOG_IN_EXCEPTION,
+    CONNECTIONS_EXCEPTION,
+    USER_EXISTS_EXCEPTION
 }

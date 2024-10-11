@@ -12,11 +12,13 @@ import java.io.Serializable;
  * @author 2dam
  */
 public class User implements Serializable{
-private String nombre;
-private Integer telefono;
-private String correo;
-private String ciudad;
-private String pass;
+private Integer company_id;
+private String name;
+private String mobile;
+private String email;
+private String street;
+private String city;
+private String password;
 
     /**
      * Constructor vacio
@@ -24,48 +26,62 @@ private String pass;
     public User() {
     }
 
-    public String getNombre() {
-        return nombre;
+    public Integer getCompany_id() {
+        return company_id;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setCompany_id(Integer company_id) {
+        this.company_id = company_id;
     }
 
-    public Integer getTelefono() {
-        return telefono;
+    public String getName() {
+        return name;
     }
 
-    public void setTelefono(Integer telefono) {
-        this.telefono = telefono;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getCorreo() {
-        return correo;
+    public String getMobile() {
+        return mobile;
     }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
     }
 
-    public String getCiudad() {
-        return ciudad;
+    public String getEmail() {
+        return email;
     }
 
-    public void setCiudad(String ciudad) {
-        this.ciudad = ciudad;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getPass() {
-        return pass;
+    public String getStreet() {
+        return street;
     }
 
-    public void setPass(String pass) {
-        this.pass = pass;
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
     
-       
-      
-      
+    
     
 }

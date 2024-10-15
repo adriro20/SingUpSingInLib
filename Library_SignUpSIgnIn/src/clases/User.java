@@ -14,11 +14,12 @@ import java.io.Serializable;
 public class User implements Serializable{
 private Integer company_id;
 private String name;
-private String mobile;
+private String zip;
 private String email;
 private String street;
 private String city;
 private String password;
+private boolean active;
 
     /**
      * Constructor vacio
@@ -42,13 +43,15 @@ private String password;
         this.name = name;
     }
 
-    public String getMobile() {
-        return mobile;
+    public String getZip() {
+        return zip;
     }
 
-    public void setMobile(String mobile) {
-        this.mobile = mobile;
+    public void setZip(String zip) {
+        this.zip = zip;
     }
+
+    
 
     public String getEmail() {
         return email;
@@ -80,6 +83,14 @@ private String password;
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
     }
     
     

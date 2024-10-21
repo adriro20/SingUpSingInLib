@@ -6,7 +6,7 @@
 package excepciones;
 
 /**
- *
+ *Clase que gestinoa excepcion al no coincidir contraseña o login en el inicio sesion
  * @author Adrian Rocha
  */
 public class LogInDataException extends Exception {

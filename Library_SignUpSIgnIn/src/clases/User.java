@@ -12,13 +12,21 @@ import java.io.Serializable;
  * @author 2dam
  */
 public class User implements Serializable{
+/**Company_id que siemple es 1*/
 private Integer company_id;
+/**name es el nombre y apellidos del usuario*/
 private String name;
+/**el zip es el codigo postal*/
 private String zip;
+/**El correo electronico*/
 private String email;
+/**Calle donde vive*/
 private String street;
+/**Ciudad donde vive*/
 private String city;
+/**contraseña dek usuario*/
 private String password;
+/**Saber si el usuario esta activo o no*/
 private boolean active;
 
     /**

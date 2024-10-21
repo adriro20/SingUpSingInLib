@@ -20,12 +20,6 @@ public enum Request implements Serializable{
     /** Solicitud para iniciar sesión en una cuenta existente. */
     SING_IN_REQUEST,
 
-    /** Solicitud para cerrar la sesión actual. */
-    SING_OUT_REQUEST,
-
-    /** Solicitud para apagar el servidor. */
-    CLOSE,
-
     /** Excepción interna generada por errores en el sistema. */
     INTERNAL_EXCEPTION,
 

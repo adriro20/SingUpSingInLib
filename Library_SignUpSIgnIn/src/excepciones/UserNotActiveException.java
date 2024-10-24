@@ -6,15 +6,15 @@
 package excepciones;
 
 /**
- * Clase que gestiona excepcion al no coincidir contraseña o login en el inicio sesion
+ * Clase que gestiona si el usuario esta activo o no al iniciar sesión
  * @author Adrian Rocha
  */
-public class LogInDataException extends Exception {
+public class UserNotActiveException extends Exception {
 
     /**
      * Constructor de la excepcion con un mensaje
      */
-    public LogInDataException() {
-        super("El correo y/o la contraseña no coinciden con el de ningún usuario registrado.");
+    public UserNotActiveException() {
+        super("El usuario no está activo.");
     }
 }

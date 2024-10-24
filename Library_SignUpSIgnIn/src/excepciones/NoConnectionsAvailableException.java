@@ -6,7 +6,7 @@
 package excepciones;
 
 /**
- *Clase que gestinoa excepcion de conexiones al servidor 
+ * Clase que gestiona la excepcion de conexiones al servidor 
  * @author Adrian Rocha
  */
 public class NoConnectionsAvailableException extends Exception {

@@ -6,7 +6,7 @@
 package excepciones;
 
 /**
- *Clase que gestinoa excepcion al registrar si el email ya esta
+ * Clase que gestiona excepcion al registrar si el email ya esta
  * @author Adrian Rocha
  */
 public class UserExitsException extends Exception {

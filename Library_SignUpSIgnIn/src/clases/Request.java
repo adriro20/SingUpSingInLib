@@ -17,18 +17,22 @@ public enum Request implements Serializable{
     /** Solicitud para registrar una nueva cuenta. */
     SING_UP_REQUEST,
 
-    /** Solicitud para iniciar sesión en una cuenta existente. */
+    /** Solicitud para iniciar sesión en un usuario existente. */
     SING_IN_REQUEST,
 
-    /** Excepción interna generada por errores en el sistema. */
+    /** Excepción interna generada por errores en el servidor. */
     INTERNAL_EXCEPTION,
 
     /** Excepción generada por fallos en el inicio de sesión. */
     LOG_IN_EXCEPTION,
 
-    /** Excepción generada por problemas de conexión. */
+    /** Excepción generada cuando no hay conexiones disponibles. */
     CONNECTIONS_EXCEPTION,
 
     /** Excepción generada cuando un usuario ya existe en el sistema. */
-    USER_EXISTS_EXCEPTION
+    USER_EXISTS_EXCEPTION,
+    
+    /** Excepción generada cuando el usuario con el que se intenta iniciar 
+     * sesión no está activo. */
+    USER_NOT_ACTIVE_EXCEPTION
 }

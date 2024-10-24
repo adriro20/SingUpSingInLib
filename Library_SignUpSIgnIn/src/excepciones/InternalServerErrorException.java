@@ -6,7 +6,7 @@
 package excepciones;
 
 /**
- *Clase que gestinoa excepcion del servidor
+ * Clase que gestiona excepcion del servidor
  * @author Adrian Rocha
  */
 public class InternalServerErrorException extends Exception {

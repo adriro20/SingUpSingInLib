@@ -9,6 +9,7 @@ import excepciones.InternalServerErrorException;
 import excepciones.LogInDataException;
 import excepciones.NoConnectionsAvailableException;
 import excepciones.UserExitsException;
+import excepciones.UserNotActiveException;
 
 /**
  *Es la interfaz que define los metodos para iniciar sesion(signIn) y registrarse(signUp)
@@ -23,7 +24,7 @@ public interface Signable {
      * @throws LogInDataException
      * @throws NoConnectionsAvailableException 
      */
-    public User signIn(Message mensaje) throws InternalServerErrorException, LogInDataException, NoConnectionsAvailableException;
+    public User signIn(Message mensaje) throws InternalServerErrorException, LogInDataException, NoConnectionsAvailableException, UserNotActiveException;
     
     /**
      * Metodo para que se registre un usuario nuevo

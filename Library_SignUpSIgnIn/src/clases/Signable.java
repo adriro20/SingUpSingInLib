@@ -8,6 +8,7 @@ package clases;
 import excepciones.InternalServerErrorException;
 import excepciones.LogInDataException;
 import excepciones.NoConnectionsAvailableException;
+import excepciones.ServerClosedException;
 import excepciones.UserExitsException;
 import excepciones.UserNotActiveException;
 
@@ -23,8 +24,10 @@ public interface Signable {
      * @throws InternalServerErrorException
      * @throws LogInDataException
      * @throws NoConnectionsAvailableException 
+     * @throws excepciones.UserNotActiveException 
+     * @throws excepciones.ServerClosedException 
      */
-    public User signIn(Message mensaje) throws InternalServerErrorException, LogInDataException, NoConnectionsAvailableException, UserNotActiveException;
+    public User signIn(Message mensaje) throws InternalServerErrorException, LogInDataException, NoConnectionsAvailableException, UserNotActiveException, ServerClosedException;
     
     /**
      * Metodo para que se registre un usuario nuevo

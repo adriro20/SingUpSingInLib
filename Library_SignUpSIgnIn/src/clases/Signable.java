@@ -19,7 +19,7 @@ import excepciones.UserNotActiveException;
 public interface Signable {
     /**
      * Metodo que sirve para que un usuario existente inicie sesion
-     * @param mensaje
+     * @param user
      * @return
      * @throws InternalServerErrorException
      * @throws LogInDataException
@@ -27,17 +27,18 @@ public interface Signable {
      * @throws excepciones.UserNotActiveException 
      * @throws excepciones.ServerClosedException 
      */
-    public User signIn(Message mensaje) throws InternalServerErrorException, LogInDataException, NoConnectionsAvailableException, UserNotActiveException, ServerClosedException;
+    public User signIn(User user) throws InternalServerErrorException, LogInDataException, NoConnectionsAvailableException, UserNotActiveException, ServerClosedException;
     
     /**
      * Metodo para que se registre un usuario nuevo
-     * @param mensaje
+     * @param user
      * @return
      * @throws InternalServerErrorException
      * @throws UserExitsException
      * @throws NoConnectionsAvailableException 
+     * @throws excepciones.ServerClosedException 
      */
-    public User signUp(Message mensaje) throws InternalServerErrorException, UserExitsException, NoConnectionsAvailableException;
+    public User signUp(User user) throws InternalServerErrorException, UserExitsException, NoConnectionsAvailableException, ServerClosedException;
     
    
 }

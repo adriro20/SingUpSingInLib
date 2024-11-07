@@ -19,24 +19,24 @@ import excepciones.UserNotActiveException;
 public interface Signable {
     /**
      * Metodo que sirve para que un usuario existente inicie sesion
-     * @param user
-     * @return
-     * @throws InternalServerErrorException
-     * @throws LogInDataException
-     * @throws NoConnectionsAvailableException 
-     * @throws excepciones.UserNotActiveException 
-     * @throws excepciones.ServerClosedException 
+     * @param user usuario que entra en la aplicacion
+     * @return User
+     * @throws InternalServerErrorException Cualquier excepcion fuera de la libreria.
+     * @throws LogInDataException si los datos no coinciden
+     * @throws NoConnectionsAvailableException Excepcion que salta cuando se supera el numero maximo de conexiones.
+     * @throws excepciones.UserNotActiveException comprueba si el usuario no esta activo
+     * @throws excepciones.ServerClosedException salta si el servidor esta cerrado
      */
     public User signIn(User user) throws InternalServerErrorException, LogInDataException, NoConnectionsAvailableException, UserNotActiveException, ServerClosedException;
     
     /**
      * Metodo para que se registre un usuario nuevo
-     * @param user
-     * @return
-     * @throws InternalServerErrorException
-     * @throws UserExitsException
-     * @throws NoConnectionsAvailableException 
-     * @throws excepciones.ServerClosedException 
+     * @param user usuario que entra en la aplicacion
+     * @return User
+     * @throws InternalServerErrorException Cualquier excepcion fuera de la libreria.
+     * @throws UserExitsException n Excepcion provocada cuando se intenta registrar usuario ya existente.
+     * @throws NoConnectionsAvailableException Excepcion que salta cuando se supera el numero maximo de conexiones.
+     * @throws excepciones.ServerClosedException Excepcion de servidor apagado.
      */
     public User signUp(User user) throws InternalServerErrorException, UserExitsException, NoConnectionsAvailableException, ServerClosedException;
     

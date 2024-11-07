@@ -44,7 +44,7 @@ private boolean active;
     
     /**
      * metodo para recoger el id de la compañia
-     * @param company_id 
+     * @param company_id es la id de compañia que siempre sera 1
      */
     public void setCompany_id(Integer company_id) {
         this.company_id = company_id;
@@ -59,7 +59,7 @@ private boolean active;
     
     /**
      * metodo para recoger nombre y apellido
-     * @param name 
+     * @param name es el nombre y apellidos del usuario
      */
     public void setName(String name) {
         this.name = name;
@@ -74,7 +74,7 @@ private boolean active;
     
     /**
      * metodo para recoger el codigo postal
-     * @param zip 
+     * @param zip el codigo postal del usuario
      */
     public void setZip(String zip) {
         this.zip = zip;
@@ -89,7 +89,7 @@ private boolean active;
 
     /**
      * metodo para recoger el email (Correo electonico)
-     * @param email 
+     * @param email es el correo electronico 
      */
     public void setEmail(String email) {
         this.email = email;
@@ -104,7 +104,7 @@ private boolean active;
     
     /**
      * metodo para recoger la calle
-     * @param street 
+     * @param street la calle donde vive el usuario
      */
     public void setStreet(String street) {
         this.street = street;
@@ -119,7 +119,7 @@ private boolean active;
     
     /**
      * metodo para recoger la ciudad
-     * @param city 
+     * @param city la ciudad donde vive el usuario
      */
     public void setCity(String city) {
         this.city = city;
@@ -134,7 +134,7 @@ private boolean active;
 
     /**
      * metodo para recoger la contraseña
-     * @param password 
+     * @param password la contraseña que tendra el usuario
      */
     public void setPassword(String password) {
         this.password = password;
@@ -149,7 +149,7 @@ private boolean active;
   
     /**
      * metodo para recoger si el usuario es activo o no
-     * @param active 
+     * @param active determina si el usuario esta activo o no
      */
     public void setActive(boolean active) {
         this.active = active;

@@ -32,7 +32,7 @@ public class Message implements Serializable{
     
     /**
      * metodo que recoge un objeto User
-     * @param user 
+     * @param user que ha entrado en la aplicacion
      */
     public void setUser(User user) {
         this.user = user;
@@ -47,7 +47,7 @@ public class Message implements Serializable{
     
     /**
      * metodo que recoge un enum Request
-     * @param request 
+     * @param request con la solicitud que desea hacer
      */
     public void setRequest(Request request) {
         this.request = request;
